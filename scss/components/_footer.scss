@@ -1,0 +1,38 @@
+.piepagina{
+    background-color: $colorcuatro;
+
+ 
+    @include d_a_j_d(flex, none, space-between, none);
+    
+}
+ 
+ 
+.logopie{
+    @include d_a_j_d(flex, center, center, column);
+gap: 20px;
+
+
+    img{
+        @include formato_img(100px, 100px, cover);
+    }
+    text-align: center
+    
+ }
+
+ .botonesredes{
+    @include d_a_j_d(flex,none,none, none);
+    gap: 20px;
+
+    a{
+    @include d_a_j_d(flex, justify-content, none, none );
+    gap: 10px;
+    &:hover {
+        box-shadow: 5px 5px 15px 0px black;
+    }
+    }
+
+    img{
+        @include formato_img(30px, 30px, cover);
+    }
+ }
+
