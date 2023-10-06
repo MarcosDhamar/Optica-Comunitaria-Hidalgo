@@ -1,28 +1,29 @@
 @media only screen and (max-width:720px) {
 
-      
-    .piepagina{
-        @include d_a_j_d(flex,none,none, column);
+    
+    .piepagina {
+        @include d_a_j_d(flex, none, none, column);
+    }
+
+    .pie0 {
+        @include d_a_j_d(flex, none, none, column);
+
+        img {
+            @include formato_img(200px, 200px, cover);
         }
-.pie0{
-    @include d_a_j_d(flex,none,none, column);
-
-    img {
-        @include formato_img(200px, 200px, cover);
-    }
-}
-
-.pie1 {
-
-    img {
-        @include formato_img(50px, 50px, cover);
     }
 
-}
+    .pie1 {
 
-.pie3 {
+        img {
+            @include formato_img(50px, 50px, cover);
+        }
 
-padding: 30px;
-}
+    }
+
+    .pie3 {
+
+        padding: 30px;
+    }
 
 }
