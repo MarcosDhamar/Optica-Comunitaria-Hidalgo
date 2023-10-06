@@ -8,69 +8,91 @@
 }
 
 .piepagina {
-  background-color: rgb(203, 237, 213);
+  gap: 70px;
+  background-color: white;
+  height: 30%;
   display: flex;
-  align-items: none;
-  justify-content: space-between;
-  flex-direction: none;
+  align-items: space-between;
+  justify-content: center;
+  flex-direction: row;
 }
 
-.logopie {
+.pie0 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 20px;
+}
+.pie0 img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.pie1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.pie1 img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.pie2 {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 20px;
-  text-align: center;
-}
-.logopie img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-}
-
-.botonesredes {
-  display: flex;
-  align-items: none;
-  justify-content: none;
-  flex-direction: none;
-  gap: 20px;
-}
-.botonesredes a {
-  display: flex;
-  align-items: justify-content;
-  justify-content: none;
-  flex-direction: none;
   gap: 10px;
 }
-.botonesredes a:hover {
-  box-shadow: 5px 5px 15px 0px black;
-}
-.botonesredes img {
-  width: 30px;
-  height: 30px;
+.pie2 img {
+  width: 50px;
+  height: 50px;
   object-fit: cover;
 }
 
-.carousel-inner {
-  margin-top: 70px;
+.pie3 {
+  text-align: center;
 }
 
-.uno {
-  background-color: rgb(67, 154, 151);
+.cuerpo {
+  padding: 100px;
+  background-color: rgb(204, 200, 170);
 }
 
 @media only screen and (max-width: 720px) {
   .carousel-inner {
     transition: 0.5s;
-    margin-top: 100px;
   }
-  .botonesredes {
+  .piepagina {
     display: flex;
     align-items: none;
     justify-content: none;
     flex-direction: column;
-    gap: 20px;
+  }
+  .pie0 {
+    display: flex;
+    align-items: none;
+    justify-content: none;
+    flex-direction: column;
+  }
+  .pie0 img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  .pie1 img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+  .pie3 {
+    padding: 30px;
   }
 }
 

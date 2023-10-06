@@ -1,18 +1,34 @@
 @media only screen and (max-width:720px) {
 
-    
-
-
-    .carousel-inner{
+        .carousel-inner{
         transition: .5s;
-        margin-top: 100px;
+        
     }
     
 
 
-    .botonesredes{
+    .piepagina{
         @include d_a_j_d(flex,none,none, column);
-        gap: 20px;
+        }
+.pie0{
+    @include d_a_j_d(flex,none,none, column);
+
+    img {
+        @include formato_img(200px, 200px, cover);
+    }
+}
+
+.pie1 {
+
+    img {
+        @include formato_img(50px, 50px, cover);
+    }
 
 }
+
+.pie3 {
+
+padding: 30px;
+}
+
 }

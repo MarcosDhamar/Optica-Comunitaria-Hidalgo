@@ -1,38 +1,45 @@
-.piepagina{
-    background-color: $colorcuatro;
+.piepagina {
 
- 
-    @include d_a_j_d(flex, none, space-between, none);
-    
+    gap: 70px;
+    background-color: white;
+    height: 30%;
+    @include d_a_j_d(flex, space-between, center, row);
+
+
+
 }
- 
- 
-.logopie{
-    @include d_a_j_d(flex, center, center, column);
-gap: 20px;
 
-
-    img{
-        @include formato_img(100px, 100px, cover);
-    }
-    text-align: center
-    
- }
-
- .botonesredes{
-    @include d_a_j_d(flex,none,none, none);
+.pie0 {
+    @include d_a_j_d(flex, center, space-between, row);
     gap: 20px;
 
-    a{
-    @include d_a_j_d(flex, justify-content, none, none );
+    img {
+        @include formato_img(300px, 300px, cover);
+    }
+
+}
+
+.pie1 {
+
+    @include d_a_j_d(flex, flex-start, center, column);
     gap: 10px;
-    &:hover {
-        box-shadow: 5px 5px 15px 0px black;
-    }
+
+    img {
+        @include formato_img(50px, 50px, cover);
     }
 
-    img{
-        @include formato_img(30px, 30px, cover);
-    }
- }
+}
 
+.pie2 {
+    @include d_a_j_d(flex, center, center, column);
+    gap: 10px;
+
+    img {
+        @include formato_img(50px, 50px, cover);
+    }
+}
+
+.pie3 {
+
+    text-align: center;
+}
